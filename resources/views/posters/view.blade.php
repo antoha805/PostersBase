@@ -1,14 +1,14 @@
 @extends('layout')
 
 @section('title')
-    Poster {{{ $poster->id }}}
+    Poster {{ $poster->id }}
 @stop
 
 @section('content')
     <div class="jumbotron">
         <div class="container">
             <h2>
-                Poster {{{ $poster->name }}}
+                Poster {{ $poster->name }}
             </h2>
         </div>
     </div>
@@ -17,11 +17,11 @@
         <table class="table table-striped">
             <tr>
                 <td>Image:</td>
-                <td><img src="{{ asset ($poster->image) }}" height="250"></td>
+                <td><img src="{{ asset ($poster->image) }}"></td>
             </tr>
             <tr>
                 <td>Body:</td>
-                <td>{{{ $poster->body }}}</td>
+                <td>{{ $poster->body }}</td>
             </tr>
             <tr>
                 <td>Author ip:</td>

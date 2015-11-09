@@ -1,6 +1,9 @@
 <div class="">
     @if ($OKs)
-        <div style="color: green">
+        <script type="text/javascript">
+            setTimeout(function(){$('#messages').fadeOut('slow')}, 3000);
+        </script>
+        <div id="messages" style="color: green">
             @foreach($OKs as $ok)
                 <p>{{ $ok }}</p>
             @endforeach
